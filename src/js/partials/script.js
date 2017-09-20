@@ -1,16 +1,15 @@
 "use strict";
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:1
-            },
-            1000:{
-                items:1
-            }
-        }
+        items: 1
     });
+    var owl = $('.owl-carousel');
+    owl.owlCarousel();
+// Go to the next item
+    $('.slider-right-js').click(function () {
+        owl.trigger('next.owl.carousel');
+    });
+    $('.slider-left-js').click(function () {
+        owl.trigger('prev.owl.carousel');
+    })
 });

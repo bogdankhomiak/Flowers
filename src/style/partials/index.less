@@ -173,14 +173,62 @@ a:hover {
     width: 22px;
     background: url("../img/icon-basket.png");
   }
+  &__arrow-right {
+    display: inline-block;
+    height: 20px;
+    width: 37px;
+    background: url("../img/icon-arrow-right.png");
+  }
 }
 
 .slider {
+  position: relative;
+  background-color: #F3F3F3;
   &__items {
     max-width: 1650px;
     margin: 0 auto;
+    padding: 0 80px;
   }
   &__img {
     width: 100%;
+  }
+}
+
+.slider-btns {
+  max-width: 1650px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -300px;
+  z-index: 1;
+  padding: 0 40px;
+  &__left {
+    font-family: Playfair Display, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 80px;
+    height: 80px;
+    background-color: #333333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__right {
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 }
