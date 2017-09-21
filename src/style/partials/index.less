@@ -588,3 +588,57 @@ h3 {
     margin-left: 18px;
   }
 }
+
+.florists {
+  background: url("../../img/img-our-florists.png") 0% 20% no-repeat, url("../../img/img-our-florists-2.png") no-repeat 100% 50%;
+  &__text {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 22px;
+    text-align: center;
+    color: #333333;
+  }
+  &__link {
+    color: #0fa79b;
+  }
+  &__items {
+  }
+  &__item {
+    text-align: right;
+    position: relative;
+    &:nth-child(2n) {
+      text-align: left;
+      & .florists {
+        &__descr {
+          right: 0;
+        }
+      }
+    }
+  }
+  &__descr {
+    position: absolute;
+    top: 0;
+    width: 470px;
+    margin: 200px 100px 0;
+    padding: 40px;
+    box-shadow: 0 0 25px 5px rgba(182, 181, 181, .8);
+    background: #ffffff url(../../img/flowers-border.png) 20px 20px no-repeat, #ffffff url(../../img/flowers-border-2.png) 417px 247px no-repeat;
+  }
+  &__img {
+    margin: 100px;
+  }
+  &__title {
+    text-align: left;
+  }
+  &__txt {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    font-size: 15px;
+    color: #464A57;
+    text-align: left;
+  }
+}
