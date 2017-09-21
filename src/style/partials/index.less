@@ -322,7 +322,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     max-width: 650px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
   }
   &__item {
     font-family: Lato, sans-serif;
@@ -470,6 +470,7 @@ h3 {
 }
 
 .information {
+  padding: 50px 0;
   &__item {
     padding: 20px 0;
     background: #FADCDC url("../img/icon-snow.png") no-repeat 0 0, #FADCDC url("../img/icon-rose.png") no-repeat 100% 100%;
@@ -514,5 +515,76 @@ h3 {
     text-align: center;
     color: #333333;
     padding: 0 32px;
+  }
+}
+
+.banners {
+  padding: 100px 0;
+}
+
+.banners-left {
+  background-color: #A6EEE8;
+  padding: 14px;
+  position: relative;
+  &__img {
+    position: absolute;
+    left: -33px;
+    bottom: 0;
+  }
+  &__descr {
+    border: 2px solid #fff;
+    padding: 41px 25px;
+    text-align: right;
+  }
+  &__title {
+    font-family: Playfair Display, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 36px;
+    color: #000000;
+  }
+  &__span {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 15px;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+.banners-right {
+  background: url("../../img/img-banners-left.png") no-repeat;
+  padding: 14px;
+  position: relative;
+  &__descr {
+    border: 2px solid #fff;
+    padding: 27px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__procent {
+    font-family: Playfair Display, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 72px;
+    color: #FFFFFF;
+  }
+  &__txt {
+    font-family: Playfair Display, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    display: block;
+    background-color: #fff;
+    padding: 5px 20px;
+    margin-left: 18px;
   }
 }
